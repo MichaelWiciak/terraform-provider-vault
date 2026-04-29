@@ -3,6 +3,9 @@
 FEATURES:
 * **New Resource**: Add support for RADIUS auth backend: `vault_radius_auth_backend` and `vault_radius_auth_backend_user` resource and `vault_radius_auth_login` ephemeral resource.([#2814](https://github.com/hashicorp/terraform-provider-vault/pull/2814))
 
+BUGS:
+* `vault_policy`: Vault policy would overwrite pre-existing policies of the same name if they were managed out of band.([#2895](https://github.com/hashicorp/terraform-provider-vault/pull/2895))
+
 ## 5.9.0 (April 22, 2026)
 
 BREAKING CHANGES:
